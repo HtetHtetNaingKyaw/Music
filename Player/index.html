@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body style="background-color: #1e1c1c">
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-4 bg-dark"
+          style="height: 100vh; border-right: 2px solid #fff"
+        >
+          <div class="display-6 text-light">My Music Player</div>
+          <div
+            class="bg-light mt-3 mb-3"
+            style="height: 2px; width: 100%"
+          ></div>
+          <div id="music"></div>
+        </div>
+        <div class="col-8 bg-dark" style="height: 100vh">
+          <div class="d-flex justify-content-center">
+            <img src="1687561.png" style="height: 350px" />
+          </div>
+          <div id="title" class="text-light text-center">gg</div>
+          <div class="d-flex justify-content-center">
+            <div class="d-flex align-items-center">
+              <div class="text-light" id="current-timer">00:00</div>
+              <div class="bg-light me-3 ms-3" style="height: 2px; width: 450px">
+                <div class="bg-danger" id="bar" style="height: 100%; width: 0px"></div>
+              </div>
+              <div class="text-light" id="total-timer">00:00</div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-evenly text-light" style="font-size: 25px;">
+            <i class="fa-solid fa-backward" id="previous"></i>
+            <i class="fa-solid fa-play" id="play"></i>
+            <i class="fa-solid fa-pause d-none" id="pause"></i>
+            <i class="fa-solid fa-forward" id="next"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <audio src="" id="audio"></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>

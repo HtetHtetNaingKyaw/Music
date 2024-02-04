@@ -1,0 +1,7 @@
+.ediCur{
+    cursor: pointer;
+}
+
+.ediHv:hover{
+    background-color: #2e2c2cc6;
+}
